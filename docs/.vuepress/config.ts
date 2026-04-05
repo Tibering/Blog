@@ -24,7 +24,20 @@ export default defineUserConfig({
     ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
   ],
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    bundler: viteBundler({
+      viteOptions: {
+        resolve: {
+          alias: {
+            // 强制使用 fflate 的浏览器 ESM 版本
+            'fflate/browser': 'fflate/esm/browser.js',
+            // 或者如果是旧版本 fflate，可能需要：
+            // 'fflate/browser': 'fflate/lib/browser.cjs'
+          }
+        }
+      }
+    })
+  }),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
