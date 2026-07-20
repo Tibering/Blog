@@ -1,0 +1,19 @@
+/* ClickSpark 点击火花效果 */
+.click-spark {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  animation: click-spark-fly ease-out forwards;
+}
+
+@keyframes click-spark-fly {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--sx), var(--sy)) scale(var(--es));
+  }
+}
