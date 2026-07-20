@@ -400,9 +400,9 @@ In the first example of an `SQL SELECT expression` in this chapter, I pointed ou
 
 ---
 
-<a name="fn1">_</a> `SQL` does have a varying-length character-string `type`, called `VARCHAR`, but even there a _`maximum`\* length has to be specified.
+<a name="fn1">*</a> `SQL` does have a varying-length character-string `type`, called `VARCHAR`, but even there a _`maximum`\* length has to be specified.
 
-<a name="fn2">_</a> By the way, what's the difference between a `DBMS` and a `database`? (This isn't an idle question, because the industry very commonly uses the term _`database`\* when it means either some `DBMS` product, such as `Oracle`, or the particular copy of such a product that happens to be installed on a particular computer. The problem is, if you call the `DBMS` a `database`, what do you call the `database`?)
+<a name="fn2">*</a> By the way, what's the difference between a `DBMS` and a `database`? (This isn't an idle question, because the industry very commonly uses the term _`database`\* when it means either some `DBMS` product, such as `Oracle`, or the particular copy of such a product that happens to be installed on a particular computer. The problem is, if you call the `DBMS` a `database`, what do you call the `database`?)
 
 <a name="fn3">\*</a> This observation is valid regardless of whether we're in an `SQL` context (as in the present discussion) or otherwise. I omit the details of what's involved in defining `selectors` in `SQL`, since they're a little messy—but I'll assume, here and throughout this book, that such `operators` have indeed been defined.
 
@@ -414,6 +414,6 @@ In the first example of an `SQL SELECT expression` in this chapter, I pointed ou
 
 <a name="fn7">\*</a> In case you're wondering, the crucial difference is that general sets can contain anything, whereas `relations` contain `tuples` specifically. Note, however, that a `relation` certainly resembles a general set in that it too can be regarded as a single `value`.
 
-<a name="fn8">_</a> Finite because we're dealing with computers, which are finite by definition. Also, note that qualifier _`named;`\* `types` with different names are different `types`.
+<a name="fn8">*</a> Finite because we're dealing with computers, which are finite by definition. Also, note that qualifier _`named;`\* `types` with different names are different `types`.
 
 <a name="fn9">\*</a> I could have used `SQL`, but `operator` definitions in `SQL` involve a number of details that I don't want to get into here.

@@ -8,13 +8,13 @@ Is this a `tuple`?
 
 **Figure Three-1.**
 
-![Figure Three-1](httpatomoreillycomsourceoreillyimages247851.png)
+![Figure Three-1](http://atiomoreilly.com/source/oreilly/images/247851.png)
 
 Well, no, of course it isn't—it's a _`picture`_ of a `tuple`, not a `tuple` as such (and note that for once I've included the `type` names as well as the `attribute` names in that picture). As we saw in Chapter 1, there's a difference between a thing and a picture of a thing, and that difference can be very important. For example, `tuples` have no left-to-right ordering to their `attributes`, and so the following is an equally good (or bad?) picture of the very same `tuple`[\*](#fn2)[\*](#fn3)[\*](#fn4):
 
 **Figure Three-2.**
 
-![Figure Three-2](httpatomoreillycomsourceoreillyimages247864.png)
+![Figure Three-2](http://atiomoreilly.com/source/oreilly/images/247864.png)
 
 Thus, while I'll certainly be making use of pictures like these in the sections to follow, please keep in mind that they're _`only`_ pictures, and they can sometimes suggest some things that aren't true.
 
@@ -45,13 +45,13 @@ For example, with reference to either of the earlier pictures (of our usual `tup
 
 **Figure Three-3.**
 
-![Figure Three-3](httpatomoreillycomsourceoreillyimages247875.png)
+![Figure Three-3](http://atiomoreilly.com/source/oreilly/images/247875.png)
 
 Of course, this picture represents a set, and the order of `attributes` is arbitrary. Here's another picture of the same `heading`:
 
 **Figure Three-4.**
 
-![Figure Three-4](httpatomoreillycomsourceoreillyimages247883.png)
+![Figure Three-4](http://atiomoreilly.com/source/oreilly/images/247883.png)
 
 _`Exercise:`_ How many different pictures of this same general nature could we draw to represent this `heading`? (_`Answer:`_ 4 _ 3 _ 2 \* 1 = 24.)
 
@@ -96,7 +96,7 @@ The next consequence is:_`every subset of a tuple is a tuple and every subset of
 
 **Figure Three-5.**
 
-![Figure Three-5](httpatomoreillycomsourceoreillyimages247913.png)
+![Figure Three-5](http://atiomoreilly.com/source/oreilly/images/247913.png)
 
 Its `heading` is as indicated, and its `type` is:
 
@@ -108,7 +108,7 @@ In the same way, the following is a `tuple` too (its `type` is `TUPLE {SNO SNO}`
 
 **Figure Three-6.**
 
-![Figure Three-6](httpatomoreillycomsourceoreillyimages247836.png)
+![Figure Three-6](http://atiomoreilly.com/source/oreilly/images/247836.png)
 
 So if we want to access the actual `attribute value`—`SNO('S1')` in the example—we have to _`extract`_ it somehow from its containing `tuple`. **`Tutorial D`** uses syntax of the form `SNO FROM `_`t`_ for this purpose (where _`t`_ is any `expression` that denotes a `tuple` with an `SNO attribute`). `SQL` uses dot qualification: _`t`_`.SNO`.
 
@@ -134,7 +134,7 @@ I'll use our usual suppliers `relation`[\*](#fn11)[\*](#fn12)[\*](#fn13)[\*](#fn
 
 **Figure Three-7.**
 
-![Figure Three-7](httpatomoreillycomsourceoreillyimages247841.png)
+![Figure Three-7](http://atiomoreilly.com/source/oreilly/images/247841.png)
 
 And here's a definition:
 
@@ -182,13 +182,13 @@ The first point I didn't mention before is that _`every subset of a body is a bo
 
 **Figure Three-8.**
 
-![Figure Three-8](httpatomoreillycomsourceoreillyimages247881.png)
+![Figure Three-8](http://atiomoreilly.com/source/oreilly/images/247881.png)
 
 Note that, given any particular `relation type`, there's exactly one empty `relation` of that `type`—but empty `relations` of different `types` aren't the same thing, precisely because they're of different `types`. For example, the empty suppliers `relation` isn't equal to the empty parts `relation`; their `bodies` are equal but their `headings` aren't.
 
 The second point I deliberately didn't mention before is this. Recall from Chapter 1 that, while a `relation` can be pictured as a `table`, a `relation` _`isn't`_ a `table`. (To say it one more time, a picture of a thing is not the same as the thing.) Of course, it can be convenient to _`think`_ of a `relation` as a `table`; after all, `tables` are "user-friendly"; indeed, it's the fact that we can think of `relations`, informally, as `tables`—sometimes more explicitly as _`flat`_ or _`two-dimensional`_ `tables`—that makes `relational systems` intuitively easy to understand and use, and makes it intuitively easy to reason about the way such systems behave. In other words, it's a very nice property of the `relational model` that its basic `data structure`, the `relation`, has such an intuitively attractive pictorial representation.
 
-Unfortunately, many people seem to have been blinded by that attractive pictorial representation into thinking that _`relations as such`_ are "`flat`" or "`two-dimensional`." But they're not. Rather, if `relation` _`r`_ has _`n`_ `attributes`, _`then each tuple in r represents a point in a certain n-dimensional space`_ (and the `relation` overall represents a set of such points). For example, each of the five `tuples` appearing in our usual sample `value` for the suppliers `relvar` `S` represents a certain point in a certain 4-dimensional space, and the `relation` overall can thus be said to be 4-dimensional. Thus, `relations` are _`n`_-dimensional, not two-dimensional![*](#fn23) As I've written elsewhere (in quite a few places, in fact): _`let's all vow never to say "flat relations" ever again`_.
+Unfortunately, many people seem to have been blinded by that attractive pictorial representation into thinking that _`relations as such`_ are "`flat`" or "`two-dimensional`." But they're not. Rather, if `relation` _`r`_ has _`n`_ `attributes`, _`then each tuple in r represents a point in a certain n-dimensional space`_ (and the `relation` overall represents a set of such points). For example, each of the five `tuples` appearing in our usual sample `value` for the suppliers `relvar` `S` represents a certain point in a certain 4-dimensional space, and the `relation` overall can thus be said to be 4-dimensional. Thus, `relations` are _`n`_-dimensional, not two-dimensional[*](#fn23) As I've written elsewhere (in quite a few places, in fact): _`let's all vow never to say "flat relations" ever again`_.
 
 Now I turn to the issues I want to elaborate on. There are three of them: duplicate `tuples`, `nulls`, and `relations` with no `attributes`. I'll discuss each in its own section.
 
@@ -203,7 +203,7 @@ Now I can present my argument. The fundamental point I want to make is that cert
 
 **Figure 3-1. A nonrelational database, with duplicates**
 
-![A nonrelational database, with duplicates](httpatomoreillycomsourceoreillyimages247888.png)
+![A nonrelational database, with duplicates](http://atiomoreilly.com/source/oreilly/images/247888.png)
 
 Before going any further, perhaps I should ask the question: what does it mean to have three `<P1,Screw>` `rows` in `table` `P` and not two, or four, or seventeen?[\*](#fn26) It must mean something, for if it means nothing, then why are the `duplicates` there in the first place? As I once heard Ted Codd say, "If something is true, saying it twice doesn't make it any more true."
 
@@ -382,7 +382,7 @@ The opening paragraph from the previous section applies equally well here (with 
 
   **Figure Three-10.**
 
-  ![Figure Three-10](httpatomoreillycomsourceoreillyimages247911.png)
+  ![Figure Three-10](http://atiomoreilly.com/source/oreilly/images/247911.png)
 
   Observe in particular that `NOT` returns `UNKNOWN` if its input is `UNKNOWN`; `AND` returns `UNKNOWN` if one input is `UNKNOWN` and the other is either `UNKNOWN` or `TRUE`; `OR` returns `UNKNOWN` if one input is `UNKNOWN` and the other is either `UNKNOWN` or `FALSE`.
 
@@ -390,7 +390,7 @@ Now I can present my argument. The fundamental point I want to make is that cert
 
 **Figure 3-2. A nonrelational database, with a null**
 
-![A nonrelational database, with a null](httpatomoreillycomsourceoreillyimages247909.png)
+![A nonrelational database, with a null](http://atiomoreilly.com/source/oreilly/images/247909.png)
 
 Consider now the following (admittedly rather contrived) query on the `database` of Figure 3-2: "Get `SNO`-`PNO` pairs where either the supplier and part cities are different or the part city isn't Paris (or both)." Here's the obvious `SQL` formulation of this query:[\*](#fn29)
 
@@ -588,7 +588,7 @@ VALUES ( ( 1, 2 ), ( 2, 1 ), ( 1, 1 ), ( 1, 2 ) )
 
 <a name="fn1">\*</a> Usually pronounced to rhyme with couple.
 
-<a name="fn2">_</a> Strictly speaking, this sentence should read "Every _`relvar`\* has at least one `candidate key`" (see the section "Relations Versus Relvars," later in this chapter). Similar remarks apply at various places elsewhere in this chapter, too (see Exercise 1-1 at the end of the chapter).
+<a name="fn2">*</a> Strictly speaking, this sentence should read "Every _`relvar`\* has at least one `candidate key`" (see the section "Relations Versus Relvars," later in this chapter). Similar remarks apply at various places elsewhere in this chapter, too (see Exercise 1-1 at the end of the chapter).
 
 <a name="fn3">\*</a> I follow convention throughout this book in using the generic term "`update`" to refer to the `INSERT`, `DELETE`, and `UPDATE` (and `assignment`) `operators` considered collectively. When I want to refer to the `UPDATE operator` specifically, I'll set it in all caps as just shown.
 
@@ -598,9 +598,9 @@ VALUES ( ( 1, 2 ), ( 2, 1 ), ( 1, 1 ), ( 1, 2 ) )
 
 <a name="fn6">*</a> I can't show this in `SQL` because `SQL` doesn't directly support `relational assignment`. Throughout this book, I'll show examples in `SQL` wherever possible—but when it's not possible for some reason, as here, I'll use a more or less self-explanatory (and truly `relational`) language called **`Tutorial D`** instead. `Tutorial D` is the language Hugh Darwen and I use to illustrate `relational` ideas in our book *Databases, Types, and the Relational Model: The Third Manifesto\*, Third Edition (Addison-Wesley, 2006); you can regard it as a realization in concrete syntax of the abstract constructs of the `relational model` (which `SQL`, regrettably, is not).
 
-<a name="fn7">_</a> As this book was going to press, I was informed that at least one well-known `SQL` product apparently uses the term "`declarative`" to mean the system _`doesn't`_ do the work! That is, it allows the user to state certain things `declaratively` (for example, the fact that a certain `view` has a certain `key`), but it doesn't enforce the `constraint` implied by that declaration—it simply assumes the user is going to enforce it instead. Such terminological abuses do little to help the cause of genuine understanding. _`Caveat lector`\*.
+<a name="fn7">*</a> As this book was going to press, I was informed that at least one well-known `SQL` product apparently uses the term "`declarative`" to mean the system _`doesn't`_ do the work! That is, it allows the user to state certain things `declaratively` (for example, the fact that a certain `view` has a certain `key`), but it doesn't enforce the `constraint` implied by that declaration—it simply assumes the user is going to enforce it instead. Such terminological abuses do little to help the cause of genuine understanding. _`Caveat lector`\*.
 
-<a name="fn8">_</a> Finite because we're dealing with computers, which are finite by definition. Also, note that qualifier _`named;`\* `types` with different names are different `types`.
+<a name="fn8">*</a> Finite because we're dealing with computers, which are finite by definition. Also, note that qualifier _`named;`\* `types` with different names are different `types`.
 
 <a name="fn9">\*</a> I could have used `SQL`, but `operator` definitions in `SQL` involve a number of details that I don't want to get into here.
 
@@ -612,7 +612,7 @@ VALUES ( ( 1, 2 ), ( 2, 1 ), ( 1, 1 ), ( 1, 2 ) )
 
 <a name="fn13">\*</a> I use `table` terminology in this section because the things we're talking about are certainly neither `relations` nor `relvars`; in particular, they have no `keys` (observe that there's no double underlining in Figure 3-1).
 
-<a name="fn14">_</a> As an exercise, show the result of this query given our usual sample data values (see Figure 1-3 in Chapter 1). _`Note:`\* The symbol `"<>"` is `SQL` syntax for `"≠"` (and I'll add for the record that the symbols `"<="` and `">="` are `SQL` syntax for `"≤"` and `"≥"`, respectively, as you probably know).
+<a name="fn14">*</a> As an exercise, show the result of this query given our usual sample data values (see Figure 1-3 in Chapter 1). _`Note:`\* The symbol `"<>"` is `SQL` syntax for `"≠"` (and I'll add for the record that the symbols `"<="` and `">="` are `SQL` syntax for `"≤"` and `"≥"`, respectively, as you probably know).
 
 <a name="fn15">\*</a> Remarks analogous to those that follow, though possibly a little less severe, might be made in connection with "`relations`" with `duplicates`, or top-to-bottom `tuple` ordering, or left-to-right `attribute` ordering.
 
