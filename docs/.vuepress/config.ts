@@ -21,7 +21,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: '/plume.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/Blog/plume.png' }],
   ],
 
   bundler: viteBundler({
