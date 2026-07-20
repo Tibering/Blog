@@ -7,14 +7,14 @@ config:
     effect: tint-plate
     effectConfig: 239
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: Moon Caffee
+      tagline: 个人博客
+      text: 记录学习笔记、技术随想和知识整理
       actions:
         - theme: brand
           text: 博客
           link: /blog/
         - theme: alt
           text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          link: https://github.com/Tibering/Blog
 ---

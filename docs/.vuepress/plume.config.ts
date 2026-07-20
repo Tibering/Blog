@@ -51,7 +51,7 @@ export default defineThemeConfig({
   profile: {
     avatar: '/plume.png',
     name: 'Moon Caffee',
-    description: '一个学习小站',
+    description: '个人博客 — 记录学习，分享技术',
     // circle: true,
     // location: '',
     // organization: '',

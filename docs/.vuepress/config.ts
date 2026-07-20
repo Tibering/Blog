@@ -16,8 +16,8 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/Blog/',
   lang: 'zh-CN',
-  title: 'Moon Caffee',
-  description: '一个学习小站',
+  title: "Moon Caffee's Blog",
+  description: '个人博客 / 学习笔记 / 技术随想',
 
   head: [
     // 配置站点图标
