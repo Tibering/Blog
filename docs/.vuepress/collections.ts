@@ -61,6 +61,14 @@ const demoDoc = defineCollection({
   // sidebar: 'auto',
 })
 
+const systemDesign = defineCollection({
+  type: 'doc',
+  dir: 'system design',
+  linkPrefix: '/system-design',
+  title: 'System Design',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 collections
  * (blog 为博客示例，如果不需要博客功能，请删除)
@@ -69,4 +77,5 @@ const demoDoc = defineCollection({
 export default defineCollections([
   blog,
   demoDoc,
+  systemDesign,
 ])

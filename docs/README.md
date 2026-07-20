@@ -4,9 +4,8 @@ externalLinkIcon: false
 config:
   - type: hero
     full: true
-    forceDark: true
     effect: tint-plate
-    effectConfig: 57,197,187
+    effectConfig: 239
     hero:
       name: Theme Plume
       tagline: VuePress Next Theme

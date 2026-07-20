@@ -22,4 +22,5 @@ export default defineNavbarConfig([
     text: '笔记',
     items: [{ text: '示例', link: '/demo/README.md' }]
   },
+  { text: 'System Design', link: '/system design/' },
 ])

@@ -14,14 +14,14 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/Blog/',
   lang: 'zh-CN',
   title: 'Moon Caffee',
   description: '一个学习小站',
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/plume.png' }],
   ],
 
   bundler: viteBundler({
@@ -65,11 +65,11 @@ export default defineUserConfig({
      * 为 markdown 文件自动添加 frontmatter 配置
      * @see https://theme-plume.vuejs.press/config/theme/#autofrontmatter
      */
-    // autoFrontmatter: {
-    //   permalink: true,  // 是否生成永久链接
-    //   createTime: true, // 是否生成创建时间
-    //   title: true,      // 是否生成标题
-    // },
+    autoFrontmatter: {
+      permalink: true,  // 是否生成永久链接
+      createTime: true, // 是否生成创建时间
+      title: true,      // 是否生成标题
+    },
 
     /* 本地搜索, 默认启用 */
     search: { provider: 'local' },
@@ -145,6 +145,11 @@ export default defineUserConfig({
     //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
     // },
 
+    markdown: {
+      plantuml: true, // 启用 PlantUML 支持
+      markmap: true,   // 启用 Markmap 支持
+      pdf: true,        // 启用 PDF 嵌入支持
+    },
     /**
      * 水印
      * @see https://theme-plume.vuejs.press/guide/features/watermark/

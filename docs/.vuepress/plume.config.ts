@@ -18,7 +18,7 @@ import collections from './collections'
  * @see https://theme-plume.vuejs.press/config/theme/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/plume.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -49,7 +49,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/theme/#profile
    */
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
+    avatar: '/plume.png',
     name: 'Moon Caffee',
     description: '一个学习小站',
     // circle: true,

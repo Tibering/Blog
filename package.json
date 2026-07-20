@@ -30,5 +30,11 @@
   },
   "engines": {
     "node": "^20.19.0 || >=22.0.0"
+  },
+  "dependencies": {
+    "markmap-lib": "^0.18.12",
+    "markmap-toolbar": "^0.18.12",
+    "markmap-view": "^0.18.12",
+    "mermaid": "^11.14.0"
   }
 }
