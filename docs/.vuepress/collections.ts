@@ -37,9 +37,9 @@ const blog = defineCollection({
   link: '/blog/',
   //   linkPrefix: '/article/', // 相关文章的链接前缀
   //   postList: true, // 是否启用文章列表页
-  //   tags: true, // 是否启用标签页
-  //   archives: true, // 是否启用归档页
-  //   categories: true, // 是否启用分类页
+  tags: true, // 是否启用标签页
+  archives: true, // 是否启用归档页
+  categories: true, // 是否启用分类页
   //   postCover: 'right', // 文章封面位置
   //   pagination: 15, // 每页显示文章数量
 })
@@ -69,6 +69,14 @@ const systemDesign = defineCollection({
   sidebar: 'auto',
 })
 
+const aiPrompting = defineCollection({
+  type: 'doc',
+  dir: 'ai prompting',
+  linkPrefix: '/ai-prompting',
+  title: 'AI Prompting',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 collections
  * (blog 为博客示例，如果不需要博客功能，请删除)
@@ -78,4 +86,5 @@ export default defineCollections([
   blog,
   demoDoc,
   systemDesign,
+  aiPrompting,
 ])

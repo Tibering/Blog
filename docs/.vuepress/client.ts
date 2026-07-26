@@ -8,6 +8,9 @@ import { defineClientConfig } from 'vuepress/client'
 
 import './theme/styles/click-spark.css'
 
+import CollapseCard from './components/CollapseCard.vue'
+import CollapseCardGroup from './components/CollapseCardGroup.vue'
+
 export default defineClientConfig({
   enhance({ app }) {
     // built-in components
@@ -17,7 +20,8 @@ export default defineClientConfig({
     // app.component('Swiper', Swiper) // you should install `swiper`
 
     // your custom components
-    // app.component('CustomComponent', CustomComponent)
+    app.component('CollapseCard', CollapseCard)
+    app.component('CollapseCardGroup', CollapseCardGroup)
   },
   setup() {
     if (typeof document === 'undefined') return

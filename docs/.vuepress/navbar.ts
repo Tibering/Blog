@@ -23,4 +23,5 @@ export default defineNavbarConfig([
     items: [{ text: '示例', link: '/demo/README.md' }]
   },
   { text: 'System Design', link: '/system design/' },
+  { text: 'AI Prompting', link: '/ai prompting/' },
 ])

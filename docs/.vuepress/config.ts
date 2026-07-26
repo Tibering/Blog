@@ -66,9 +66,9 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/config/theme/#autofrontmatter
      */
     autoFrontmatter: {
-      permalink: true,  // 是否生成永久链接
-      createTime: true, // 是否生成创建时间
-      title: true,      // 是否生成标题
+      permalink: 'filepath',  // 根据文件路径生成永久链接
+      createTime: true,       // 是否生成创建时间
+      title: true,            // 是否生成标题
     },
 
     /* 本地搜索, 默认启用 */
@@ -149,6 +149,7 @@ export default defineUserConfig({
       plantuml: true, // 启用 PlantUML 支持
       markmap: true,   // 启用 Markmap 支持
       pdf: true,        // 启用 PDF 嵌入支持
+      collapse: true,   // 启用折叠面板 ::: collapse
     },
     /**
      * 水印
